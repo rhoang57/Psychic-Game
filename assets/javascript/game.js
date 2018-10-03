@@ -34,6 +34,7 @@ var computerChoices = ["a","b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l"
        userguesses = [];
        refWins.textContent = wins;
        refRemaining.textContent = guessesremaining;
+       computerLetter = computerChoices[Math.floor(Math.random()* computerChoices.length)];
    }
         //If the user's key does not match, the 'Guesses Left' number would be decreased by 1 each time and should display in the html.
         else {
@@ -48,7 +49,11 @@ var computerChoices = ["a","b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l"
        userguesses = [];
        guessesremaining = 9;
        refRemaining.textContent = guessesremaining;
-       reset();
+       computerLetter = computerChoices[Math.floor(Math.random()* computerChoices.length)];
    }
+
+        if (lossess === 10) {
+
+        }
 
 };
