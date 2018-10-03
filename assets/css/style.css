@@ -1,0 +1,27 @@
+#game-title {
+    font-weight:bolder;
+}
+
+.container-fluid {
+    background: #53baff;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #1344dd;
+    text-align: center;
+}
+
+#instructions {
+    background: #ec4c5f;
+    color:#ffffff;
+    padding-top:2%;
+}
+
+#guessing-game {
+    background: yellow;
+    font-weight: bolder;
+    text-align: center;
+    padding-top:2%;
+}
+
+#image {
+    height:100%;
+}
