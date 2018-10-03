@@ -23,8 +23,11 @@ var computerChoices = ["a","b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l"
         userguesses.push(userLetter);
         refUsed.textContent = userguesses;
 
+        //Creating a variable to reset the computer letter if the user wins
+
+
         //If the user key matches the computer's randomly generated key, then the wins would increase by 1,
-        //guesses left would be reset to 9, 'Your guesses so far' would reset to a blank array, 
+        //guesses left would be( reset to 9, 'Your guesses so far' would reset to a blank array, 
          if (userLetter === computerLetter) {
        wins++;
        guessesremaining = 9;

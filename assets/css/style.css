@@ -25,3 +25,17 @@
 #image {
     height:100%;
 }
+
+footer {
+    background-color:#53baff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.jumbotron {
+    background-color:#53baff;
+}
