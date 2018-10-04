@@ -33,6 +33,7 @@ document.onkeyup = function (event) {
             wins++;
             guessesremaining = 9;
             userguesses = [];
+            refUsed.textContent = userguesses;
             refWins.textContent = wins;
             refRemaining.textContent = guessesremaining;
             computerLetter = computerChoices[Math.floor(Math.random() * computerChoices.length)];
