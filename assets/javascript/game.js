@@ -21,10 +21,11 @@ document.onkeyup = function (event) {
     //Assigns the value for the user's letter based on which key was pressed.
     var userLetter = event.key;
 
-    //Creating a variable to reset the computer letter if the user wins
-    if (!userguesses.includes(userLetter)) {
-        userguesses.push(userLetter);
-        refUsed.textContent = userguesses;
+    //Creating an if statement preventing a user pressed key to be displayed more than once and count against their remaining guesses more than one time.
+        if (!userguesses.includes(userLetter)) {
+            userguesses.push(userLetter);
+            refUsed.textContent = userguesses;
+        }
 
 
         //If the user key matches the computer's randomly generated key, then the wins would increase by 1,
@@ -38,6 +39,7 @@ document.onkeyup = function (event) {
             refRemaining.textContent = guessesremaining;
             computerLetter = computerChoices[Math.floor(Math.random() * computerChoices.length)];
         }
+        
         //If the user's key does not match, the 'Guesses Left' number would be decreased by 1 each time and should display in the html.
         else {
             guessesremaining--;
@@ -67,5 +69,5 @@ document.onkeyup = function (event) {
             computerLetter = computerChoices[Math.floor(Math.random() * computerChoices.length)];
         }
 
-    }
+    
 };
