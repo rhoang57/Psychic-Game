@@ -48,6 +48,7 @@ document.onkeyup = function (event) {
             losses++;
             refLosses.textContent = losses;
             userguesses = [];
+            refUsed.textContent = [];
             guessesremaining = 9;
             refRemaining.textContent = guessesremaining;
             computerLetter = computerChoices[Math.floor(Math.random() * computerChoices.length)];
